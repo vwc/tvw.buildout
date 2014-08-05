@@ -4,7 +4,7 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="example.sitetheme">
+    i18n_domain="tvw.sitetheme">
 
   <five:registerPackage package="." initialize=".initialize" />
 
@@ -12,9 +12,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="example.sitetheme"
+      title="tvw.sitetheme"
       directory="profiles/default"
-      description="Installs the example.sitetheme package"
+      description="Installs the tvw.sitetheme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
@@ -23,5 +23,5 @@
       directory="resources"
       type="theme"
       />
-  
+
 </configure>
