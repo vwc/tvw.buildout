@@ -1,0 +1,148 @@
+//
+// Application header including hero unit
+// ---------------------------------------------
+
+.app-brandbar {
+    padding: 0 @line-height-computed ceil(@line-height-computed / 2);
+    &.app-brandbar-default {
+        border-bottom: 1px solid @brand-primary;
+    }
+}
+
+.app-brand {
+    color: @app-gray;
+    .text-center();
+    &:hover {
+        color: @app-gray;
+    }
+    > img {
+        .center-block();
+        @media (min-width: @screen-tablet) {
+            .text-left();
+            margin-left: 0;
+            display: inline-block;
+            .pull-left();
+        }
+    }
+}
+
+.app-brandname {
+    .center-block();
+    margin-top: (@line-height-computed * 1.5);
+    text-transform: lowercase;
+    @media (min-width: @screen-tablet) {
+       display: inline-block;
+       margin-left: (@line-height-computed / 2);
+    }
+}
+
+.app-brand-subtitle {
+    .center-block();
+    font-weight: 400;
+    > .app-brand-text-sm {
+        font-weight: 300;
+    }
+    //margin-top: @line-height-computed;
+    @media (min-width: @screen-tablet) {
+       display: inline-block;
+       margin-left: (@line-height-computed / 2);
+    }
+}
+
+
+.app-languages {
+    margin-top: @line-height-computed * 2;
+    text-transform: uppercase;
+    .text-center();
+    color: @app-primary;
+    @media (min-width: @screen-tablet) {
+        text-align: right;
+    }
+    > a {
+        color: @app-gray;
+    }
+}
+
+// Section specific app header
+// ----------------------------
+
+.app-header {
+    padding-top: 0;
+    margin-bottom: 0;
+    background: @app-gray-light;
+    @media (min-width: @screen-sm) {
+        height: 585px;
+        border-bottom: (@navbar-height * 4) solid @app-gray-light;
+
+        background: url(../../assets/img/ro-header-bg.jpg) no-repeat 50% 0 @app-gray-light;
+        &.app-header-frontpage {
+            height: 635px;
+            border-bottom: (@navbar-height * 4) solid @app-gray-light;
+        }
+    }
+}
+
+.section-work-fm .app-header,
+.section-imprint .app-header {
+    background-image: url(../../assets/img/ro-header-work-fm.jpg);
+}
+.section-hr-management .app-header,
+.section-kontakt .app-header {
+    background-image: url(../../assets/img/ro-header-hrm.jpg);
+}
+.section-consulting .app-header {
+    background-image: url(../../assets/img/ro-header-consulting.jpg);
+}
+
+.app-header-claim {
+    position: relative;
+    .size(200px, @line-height-computed);
+    .center-block();
+    margin-top: @navbar-height;
+    margin-bottom: @navbar-height;
+    color: @app-danger !important;
+    .h3();
+    font-family: @headings-font-family;
+    font-weight: 700;
+    line-height: @line-height-computed;
+    text-transform: uppercase;
+    @media (min-width: @screen-md) {
+        .size(@screen-xs, @line-height-computed);
+        margin-bottom: @navbar-height * 2;
+        &:before,
+        &:after {
+            content:"";
+            position: absolute;
+            top: -(@line-height-computed / 2);
+            display: block;
+            .size(ceil(@navbar-height * 1.5), @line-height-computed);
+            border-bottom: 1px solid @app-danger;
+        }
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+    }
+}
+
+.app-header-title {
+    .text-center();
+    font-size: (@font-size-base * 2.5);
+    @media (min-width: @screen-sm) {
+        //margin-top: -(@navbar-height * 2);
+        color: #fff !important;
+        font-size: (@font-size-base * 4.5);
+        text-shadow: -1px -1px @gray, -2px -2px @gray;
+    }
+    @media (min-width: @screen-md) {
+        margin-top: -(@navbar-height);
+    }
+    > a {
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+//
+// Application footer
+// ---------------------------------------
+
+.app-footer {
+    border-bottom: 10px solid @app-primary;
+}
+
+.app-footer-content {
+    padding: @line-height-computed;
+    border-top: 1px solid @app-primary;
+    color: @app-gray;
+    p {
+        padding-top: (@line-height-computed / 2);
+    }
+    a {
+        color: @app-gray;
+    }
+}
+
+@media (min-width: @screen-desktop) {
+    .app-footer-navbar > p {
+        .text-right();
+    }
+    .app-footer-brand {
+        .text-center();
+    }
+}

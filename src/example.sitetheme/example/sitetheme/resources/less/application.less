@@ -1,0 +1,488 @@
+//
+// Application stylesheet
+// -----------------------------------------------
+
+
+.visualClear {
+    clear: both;
+}
+
+// Remove border radius from all button elements
+.btn {
+    border-radius: 0;
+}
+
+// Fix password reset
+
+#userid {
+    .form-control();
+}
+
+
+.app-navbar {
+    font-family: @headings-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+    .navbar-nav > .nav-item-home > a {
+        //color: @brand-primary;
+        font-size: @font-size-base * 1.5;
+        background: transparent;
+        &.active {
+            background: transparent;
+        }
+    }
+    .navbar-nav > .dropdown > a .caret {
+        border-bottom-color: @brand-primary;
+        border-top-color: @brand-primary;
+    }
+    .navbar-nav > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: brand-primary;
+        background-color: @navbar-inverse-link-active-bg;
+      }
+    }
+}
+
+.app-toolbar + .app-navbar {
+    margin-top: @navbar-height;
+}
+
+.app-header {
+	background: #550b01;
+}
+.app-content {
+    margin-bottom: (@line-height-computed * 2);
+    @media (min-width: @screen-sm) {
+        &.app-content-tiles {
+            margin-top: -(@navbar-height * 4);
+        }
+    }
+}
+
+ @media (min-width: @screen-sm) {
+    .app-content-body {
+        margin-top: -(@navbar-height * 1.5);
+    }
+}
+
+.section-front-page .app-content-body {
+    margin-top: 0;
+}
+
+.app-page {
+    min-height: 450px;
+    padding-bottom: @line-height-computed;
+    background: rgba(142, 192, 94, 0.75);
+    &.app-page-opaque {
+        background:transparent;
+    }
+}
+
+.page-content-primary {
+    min-height: 450px;
+    padding: @line-height-computed / 2 @line-height-computed @line-height-computed;
+    background: rgba(142, 192, 94, 0.75);
+}
+
+.app-page-default {
+    border-top: 1px solid @app-primary;
+    padding-top: @line-height-computed;
+}
+
+.appbox {
+    padding: @line-height-computed;
+    margin-bottom: @line-height-computed;
+    background: rgba(142, 192, 94, 0.75);
+    color: @text-color;
+    text-align: center;
+    &.appbox-content {
+        text-align: left;
+    }
+    .modal {
+        text-align: left;
+    }
+}
+
+.appbox-header > img {
+    .center-block();
+}
+
+.appbox-content {
+    h2, h3 {
+        color: #000;
+    }
+    .appbox-content-headline {
+        .h4();
+        margin-bottom: @line-height-computed;
+        font-size: ceil(@font-size-base * 1.2);
+    }
+    @media (min-width: @screen-md) {
+        h2 {
+            font-size: floor(@font-size-base * 1.8);
+        }
+    }
+}
+
+.appbox-footer {
+    padding-top: @line-height-computed;
+    text-align: left;
+    border-top: 1px solid @gray;
+    &.appbox-footer-centered {
+        text-align: center;
+    }
+}
+
+.appbox-btn {
+    font-family: @headings-font-family;
+    text-transform: uppercase;
+}
+
+.appbox-subcontent {
+    text-align: left;
+}
+
+.appbox-li {
+    margin-bottom: @line-height-computed;
+    padding: @line-height-computed 0;
+    border-bottom: 1px solid @gray;
+    &:last-child {
+        border-width: 0;
+    }
+}
+.appbox-li-headline-primary {
+    color: @link-color;
+}
+
+
+// INquiry form
+
+.app-form {
+    padding: 0 @line-height-computed;
+    @media (min-width: @screen-sm) {
+        .form-group {
+            margin-left: 0;
+        }
+        .form-control {
+            border-color: #fff;
+        }
+        .control-label {
+            height: @input-height-base;
+            margin-right: -15px;
+            text-align: left;
+            background: @input-group-addon-bg;
+            color: @app-danger;
+            &.app-form-textarea-label {
+                height: 74px;
+            }
+        }
+    }
+    .app-form-actions { 
+        margin: @line-height-computed;
+    }
+}
+
+.app-form-label {
+    text-align: left;
+    background: @gray-light;
+    color: @app-danger;
+}
+
+//
+// Deco arrows
+// -----------------------------------------------
+
+
+.app-deco {
+    text-align: center;
+}
+
+.app-decoarrow {
+    .center-block();
+    width: 0;
+    height: 0;
+    border-left: (@line-height-computed * 2) solid transparent;
+    border-right: (@line-height-computed * 2) solid transparent;
+    border-top: (@line-height-computed * 2) solid transparent;
+}
+.app-decoarrow-default {
+    border-top: (@line-height-computed * 2) solid @app-gray-light;
+}
+.app-decoarrow-light {
+    border-top: (@line-height-computed * 2) solid #fff;
+}
+.app-decoarrow-primary {
+    border-top: (@line-height-computed * 2) solid rgba(142, 192, 94, 0.75);
+}
+
+//
+// Application footer
+// ---------------------------------------
+
+.app-footer {
+    border-bottom: 10px solid @app-primary;
+}
+
+.app-footer-content {
+    padding: @line-height-computed;
+    border-top: 1px solid @app-primary;
+    color: @app-gray;
+    p {
+        padding-top: (@line-height-computed / 2);
+    }
+    a {
+        color: @app-gray;
+    }
+}
+
+@media (min-width: @screen-desktop) {
+    .app-footer-navbar > p {
+        .text-right();
+    }
+    .app-footer-brand {
+        .text-center();
+    }
+}
+
+//
+// Application header including hero unit
+// ---------------------------------------------
+
+.app-brandbar {
+    padding: 0 @line-height-computed ceil(@line-height-computed / 2);
+    &.app-brandbar-default {
+        border-bottom: 1px solid @brand-primary;
+    }
+}
+
+.app-brand {
+    color: @app-gray;
+    .text-center();
+    &:hover {
+        color: @app-gray;
+    }
+    > img {
+        .center-block();
+        @media (min-width: @screen-tablet) {
+            .text-left();
+            margin-left: 0;
+            display: inline-block;
+            .pull-left();
+        }
+    }
+}
+
+.app-brandname {
+    .center-block();
+    margin-top: (@line-height-computed * 1.5);
+    text-transform: lowercase;
+    @media (min-width: @screen-tablet) {
+       display: inline-block;
+       margin-left: (@line-height-computed / 2);
+    }
+}
+
+.app-brand-subtitle {
+    .center-block();
+    font-weight: 400;
+    > .app-brand-text-sm {
+        font-weight: 300;
+    }
+    //margin-top: @line-height-computed;
+    @media (min-width: @screen-tablet) {
+       display: inline-block;
+       margin-left: (@line-height-computed / 2);
+    }
+}
+
+
+.app-languages {
+    margin-top: @line-height-computed * 2;
+    text-transform: uppercase;
+    .text-center();
+    color: @app-primary;
+    @media (min-width: @screen-tablet) {
+        text-align: right;
+    }
+    > a {
+        color: @app-gray;
+    }
+}
+
+// Section specific app header
+// ----------------------------
+
+.app-header {
+    padding-top: 0;
+    margin-bottom: 0;
+    background: @app-gray-light;
+    @media (min-width: @screen-sm) {
+        height: 585px;
+        border-bottom: (@navbar-height * 4) solid @app-gray-light;
+
+        background: url(../../assets/img/ro-header-bg.jpg) no-repeat 50% 0 @app-gray-light;
+        &.app-header-frontpage {
+            height: 635px;
+            border-bottom: (@navbar-height * 4) solid @app-gray-light;
+        }
+    }
+}
+
+.section-work-fm .app-header,
+.section-imprint .app-header {
+    background-image: url(../../assets/img/ro-header-work-fm.jpg);
+}
+.section-hr-management .app-header,
+.section-kontakt .app-header {
+    background-image: url(../../assets/img/ro-header-hrm.jpg);
+}
+.section-consulting .app-header {
+    background-image: url(../../assets/img/ro-header-consulting.jpg);
+}
+
+.app-header-claim {
+    position: relative;
+    .size(200px, @line-height-computed);
+    .center-block();
+    margin-top: @navbar-height;
+    margin-bottom: @navbar-height;
+    color: @app-danger !important;
+    .h3();
+    font-family: @headings-font-family;
+    font-weight: 700;
+    line-height: @line-height-computed;
+    text-transform: uppercase;
+    @media (min-width: @screen-md) {
+        .size(@screen-xs, @line-height-computed);
+        margin-bottom: @navbar-height * 2;
+        &:before,
+        &:after {
+            content:"";
+            position: absolute;
+            top: -(@line-height-computed / 2);
+            display: block;
+            .size(ceil(@navbar-height * 1.5), @line-height-computed);
+            border-bottom: 1px solid @app-danger;
+        }
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+    }
+}
+
+.app-header-title {
+    .text-center();
+    font-size: (@font-size-base * 2.5);
+    @media (min-width: @screen-sm) {
+        //margin-top: -(@navbar-height * 2);
+        color: #fff !important;
+        font-size: (@font-size-base * 4.5);
+        text-shadow: -1px -1px @gray, -2px -2px @gray;
+    }
+    @media (min-width: @screen-md) {
+        margin-top: -(@navbar-height);
+    }
+    > a {
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+//
+// Application settings and variables
+// -------------------------------------------------
+
+
+// Green (rgb: 142, 192, 94)
+@app-primary:                   #8ec05e;
+// Red (rgb: 237, 98, 98)
+@app-danger:                    #ed6262;
+// Gray
+@app-gray:                      #5a5f64;
+@app-gray-light:                #e3e4e5;
+
+
+@link-color:                    @app-danger;
+
+@brand-primary:                 @app-danger;
+
+@font-family-base:        'Sanchez', @font-family-sans-serif;
+@headings-font-family:    'Montserrat', @font-family-base;
+@headings-font-weight:    600;
+
+
+// Custom application navbar
+@navbar-border-radius:                      0;
+@navbar-inverse-bg:                         @app-gray;
+@navbar-inverse-link-color:                 @gray-lighter;
+@navbar-inverse-link-hover-color:           @brand-primary;
+
+@border-radius-base:             0;
+@border-radius-large:            0;
+@border-radius-small:            0;
+
+// Font awesome font path
+
+@fa-font-path:    "../../assets/fonts";
+
+//
+// Custom signin page styles
+// ---------------------------------------------------
+
+.app-simple {
+    margin-top: @navbar-height;
+    border-top: (@line-height-computed / 2) solid @brand-primary;
+}
+
+.app-signin {
+    .center-block();
+    max-width: @screen-sm;
+    margin-top: (@navbar-height * 2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    background: #fff;
+
+    border: 1px solid #fff;
+    border-radius: @border-radius-base;
+}
+
+.page-aside {
+    position:relative;
+    padding: (@line-height-computed * 2) @line-height-computed;
+}
+
+.page-signin {
+    background: #fff;
+    color: @gray-light;
+    .page-content {
+        padding: @line-height-computed;
+    }
+    .page-footer {
+    }
+    @media (min-width: @screen-tablet) {
+        border-left: 1px solid @gray-lighter;
+    }
+}
+
+.page-signin .documentDescription {
+    margin-bottom: @line-height-computed;
+}
+.page-signin p {
+    .text-muted();
+}
+
+// registration
+.app-register {
+    margin-bottom: @navbar-height;
+    border-bottom: 5px solid @brand-success;
+}
+
+.app-register-actions {
+    padding: @line-height-computed 0;
+}
+

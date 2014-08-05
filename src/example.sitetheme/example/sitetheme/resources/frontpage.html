@@ -1,0 +1,293 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+  
+    Getting started &middot; Bootstrap
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/++theme++ro.sitetheme/assets/ico/apple-touch-icon-144-precomposed.png">
+                               <link rel="shortcut icon" href="/++theme++ro.sitetheme/assets/ico/favicon.png">
+  </head>
+  <body class="section-front-page">
+    <a class="sr-only" href="#content">Skip navigation</a>
+    <div class="navbar navbar-default navbar-fixed-top app-toolbar" id="app-toolbar">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".app-toolbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CMS Toolbar</a>
+    </div>
+    <div class="navbar-collapse collapse app-toolbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Contents</a></li>
+          <li><a href="#about">View</a></li>
+          <li><a href="#contact">Edit</a></li>
+          <li><a href="#contact">Share</a></li>
+          <li><a href="#contact">Content rules</a></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li id="plone-personal-actions" class="dropdown dropdown-userinfo">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="/author/123456789">
+              <span>John Doe</span>
+              <b class="caret">
+            </b></a>
+            <ul class="dropdown-menu"><li id="plone-personal-actions-dashboard">
+                <a href="/dashboard">My workspace</a>
+              </li>
+              <li id="plone-personal-actions-preferences">
+                <a href="/preferences">Settings</a>
+              </li>
+              <li id="plone-personal-actions-plone_setup">
+                <a href="/controlpanel">Configuration</a>
+              </li>
+              <li id="plone-personal-actions-logout">
+                <a href="/logout">Signout</a>
+              </li>
+            </ul></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Add <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Folder</a></li>
+                <li><a href="#">Document</a></li>
+                <li><a href="#">Image</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Settings</li>
+                <li><a href="#">Filter options</a></li>
+                <li><a href="#">Add...</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div><!--/.nav-collapse -->
+	</div>
+
+    <div class="app-brandbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-lg-4">
+                <a class="app-brand" href="/">
+                    <img class="img-responsive" src="/++theme++example.sitetheme/img/logo.png" />
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-lg-8">
+				    <!-- Docs master nav -->
+				    <nav class="navbar navbar-inverse app-navbar" id="app-navbar" role="navigation">
+				  <div class="container">
+				  <div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+				      <span class="sr-only">Toggle navigation</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				    <a class="navbar-brand visible-xs" href="#">TV Willmatshofen</a>
+				  </div>
+
+				  <div class="collapse navbar-collapse navbar-main-collapse">
+				    <ul class="nav navbar-nav " id="app-navbar-nav">
+              <li><a id="sport" href="/sportangebote">Sportangebote<span class="dot">.</span></a></li>
+              <li><a id="aktuell" href="/aktuelles">Aktuelles<span class="dot">.</span></a></li>
+              <li><a id="verein" href="/verein">Verein<span class="dot">.</span></a></li>
+              <li><a id="lauf" href="/silvesterlauf">Silvesterlauf<span class="dot">.</span></a></li>
+				    </ul>
+				  </div><!-- /.navbar-collapse -->
+				  </div>
+				</nav>
+            </div>
+        </div>
+    </div>
+	</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12" id="sidebar-left">
+          <!-- sidebar-left -->
+          </div>
+      </div>
+    </div>
+    <!-- Docs page layout -->
+    <div class="jumbotron app-header app-header-frontpage">
+      <div class="container">
+            <div class="app-content app-content-tiles">
+                <div class="container" role="main">
+                    <main class="app-content-body">
+                          <div class="app-page" id="content">
+                              <div class="app-page-content"></div>
+                          </div>
+                    </main>
+                </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="app-content">
+        <div class="container" role="main">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="appbox">
+					<a href="/sportangebote">
+                    <div class="appbox-header">
+                        <img class="img-responsive" src="/++theme++example.sitetheme/img/sportangebote.png" />
+                    </div>
+                    <div>
+                      <h2>Sportangebote</h2>
+                      <p>Unser Verein bietet ein Sportangebot für Jung und Alt an.</p>
+                      <p>Neben Sport für Kinder, Turnen und Bewegung
+                      oder Sport an Großger&auml;ten gibt es auch allgemeine Angebote für Fitness und Gesundheit, wie Pilates oder Zumba-Fitness </p>
+                      <p>Auch Kraftsportbegeisterte gibt es diverse Angebote zur Auswahl.
+					</div>
+				</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="appbox">
+					<a href="/aktuelles">
+                    <div class="appbox-header">
+                        <img class="img-responsive" src="/++theme++example.sitetheme/img/veranstaltungen.png" />
+                    </div>
+                    <h2>Veranstaltungen</h2>
+                  </a>
+                    <div id="sidebar-right">
+                        <p></p>
+                    </div>
+				
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="appbox">
+				<a href="/verein">
+                <div class="appbox-header">
+                    <img class="img-responsive" src="/++theme++example.sitetheme/img/verein.png" />
+                </div>
+                    <h2>Hallenplan</h2>
+                    <p>Hier finden Sie einen Wochenüberblick über unsere Sportveranstaltungen.</p>
+                </div>
+				</a>
+            </div>
+        </div>
+    </div>
+	<div class="app-kontakt">
+		<div class="container">
+			<div class="row">
+		<ul>
+			<li class="adresse"><img class="center-block" src="/++theme++example.sitetheme/img/map.png" /><span>Mühlmähder 7, 86850 Fischbach-Willmatshofen</span></li>
+			<li class="tel">
+        <img class="center-block" src="/++theme++example.sitetheme/img/phone.png" />
+        <span>08236 - 95 86 45<span></li>
+			<li class="mail">
+          <img class="center-block" src="/++theme++example.sitetheme/img/mail.png" />
+        <a href="mailto:mail@tvwillmatshofen.de"><span>mail@tvwillmatshofen.de</span></li>
+		</ul>
+			</div>
+		</div>
+	</div>
+<footer class="app-footer" role="contentinfo">
+  <div class="container app-footer-content">
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <p>&copy; Copyright 2014 - TV Willmatshofen</p>
+        </div>
+        <div >
+            <div>
+              <ul>
+                <li><a href="/" rel="nofollow">Home<span class="dot">.</span></a></li>
+                <li><a href="/sportangebote" rel="nofollow">Sportangebote<span class="dot">.</span></a></li>
+                <li><a href="/aktuelles" rel="nofollow">Aktuelles<span class="dot">.</span></a></li>
+				        <li><a href="/silvesterlauf" rel="nofollow">Silvesterlauf<span class="dot">.</span></a></li>
+                <li><a href="/kontakt" rel="nofollow">Kontakt<span class="dot">.</span></a></li>
+                <li><a href="/impressum" rel="nofollow">Impressum<span class="dot">.</span></a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-12">
+            <div class="app-footer-brand">
+              <img class="center-block" src="/++theme++example.sitetheme/img/logo.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+</footer>
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../bower_components/jquery/jquery.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../../bower_components/holderjs/holder.js"></script>
+
+<script src="/++theme++ro.sitetheme/assets/js/application.js"></script>
+
+<!-- Custom Fonts -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Montserrat:700,400:latin', 'Sanchez:400italic,400:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+    <div id="webfonts">
+        <!-- Custom Fonts -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Montserrat:700,400:latin', 'Sanchez:400italic,400:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://tkr.ade25.de/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 108]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://tkr.ade25.de/piwik.php?idsite=108" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+    </div>
+
+  </body>
+</html>
