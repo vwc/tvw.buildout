@@ -72,7 +72,7 @@ dfn
 }
 h1
 {
-    font-size: 2em;
+    font-size: 5em;
 
     margin: .67em 0;
 }
@@ -11309,8 +11309,8 @@ dd.image-caption
 {
     margin-bottom: 0;
     padding-top: 0;
-
-    background: #e3e4e5;
+    min-height: 100px;
+    background: #f9a032;
 
 }
 @media (min-width: 768px)
@@ -11678,8 +11678,9 @@ textarea#userid
 }
 .app-content
 {
+    margin-top: -100px;
     margin-bottom: 40px;
-	background-color: #fff;
+	background-color: transparent;
 }
 @media (min-width: 768px)
 {
@@ -11703,23 +11704,21 @@ textarea#userid
 {
     min-height: 450px;
     padding-bottom: 20px;
-
-    background: #fff;
+    background: transparent;
 }
 
 .app-page .documentFirstHeading {
-	margin-top: -91px;
 	color: #550b01;
-	font-size: 5em;
-	margin-bottom: 50px;
-    background-color: #f9a032;
-    border-bottom: 14px solid #f9a032;
+
 }
 
 .app-page .documentDescription {
 	font-size: 1.8em;
 	color: #550b01;
+    float:left;
 }
+
+
 .app-page p{
     font-size: 1.5em;
 }
@@ -12031,28 +12030,42 @@ textarea#userid
 }
 .app-header-frontpage .app-page {
     background: none repeat scroll 0 0 #fff;
-    display: inline-block;
     min-height: 450px;
     padding-bottom: 20px;
     background-color: transparent;
+    display: inline-block;
 }
 .app-header-frontpage .app-page .documentFirstHeading {
     color: #fff;
     font-size: 3.5em;
     margin-bottom: 50px;
-    margin-top: 250px;
-    width: 38%;
+    margin-top: 50px;
+    width: 50%;
+    float: left;
     background-color: transparent;
     border-bottom: none;
 }
 
-.app-header-frontpage .app-page .documentDescription {
+.app-page .item h2 {
+    width: auto;
+}
+ .app-header-frontpage .app-page .documentDescription {
     color: #fff;
-    float: right;
     font-size: 1.8em;
-    margin-top: -300px;
-    margin-left: 5px;
-    width: 60%;
+    width: 50%;
+    float:left;
+}  
+
+
+.app-page .tileHeadline a {
+    color: #550b01;
+}
+
+.app-page .tileItem {
+
+    border: 2px solid #550b01;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .app-header-frontpage .app-content.app-content-tiles {
@@ -12097,24 +12110,15 @@ span.dot {
 }
 
 #content-core h2.headline a.summary.url {
-    font-size: 2em;
-    color: #550b01;    
+    color: #550b01;  
+    width: 100%;  
 }
 #content-core .item .description {
     font-size: 1.5em;
     color: #550b01;
 }
 
-.section-sportangebote .item {
-    width: 45%;
-    height: 450px;
-    display: block;
-    float: left;
-    border: 2px solid #d7d7d7;
-    margin: 5px;
-    padding: 2px;
 
-}
 
 .section-sportangebote .item .description {
     font-size: 1.2em;
@@ -12123,12 +12127,6 @@ span.dot {
     visibility: hidden;
 }
 
-.section-sportangebote .tileItem {
-    border: 2px solid #d7d7d7;
-    margin: 5px;
-    padding: 2px;
-
-}
 
 .section-sportangebote .tileBody {
     font-size: 1.2em;
