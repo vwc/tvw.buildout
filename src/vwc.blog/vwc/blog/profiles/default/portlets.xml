@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<portlets>
+  <portlet
+    addview="vwc.blog.archive"
+    title="Monthly archive"
+    description="A blog style archive portlet"
+    />
+  <portlet
+      addview="vwc.blog.blogrecent"
+      title="Blog recent"
+      description="A blog recent entries portlet"
+      />
+  <portlet
+      addview="vwc.blog.categories"
+      title="Blog categories"
+      description="A blog categories portlet"
+      />
+</portlets>

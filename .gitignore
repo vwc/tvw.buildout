@@ -24,6 +24,5 @@ var
 .codeintel
 etc/**/*
 src/sauna.reload
-src/vwc.*
 src/ade25.*
 src/kk.tiles

@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: 2013-08-12 12:05+0000\n"
+"PO-Revision-Date: 2013-08-12 14:07+0100\n"
+"Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
+"Language-Team: VW Language Team <hallo@vorwaerts-werbung.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: vwc.blog\n"
+
+#: ./../portlets/archive.py:40
+#: ./../portlets/categories.py:26
+msgid "Archive view"
+msgstr "Archive Ansicht"
+
+#: ./../portlets/archive.pt:7
+msgid "Blog Archive"
+msgstr "Archiv"
+
+#: ./../blogentry.py:22
+msgid "Blog Entry"
+msgstr "Blogbeitrag"
+
+#: ./../portlets/archive.py:66
+msgid "Blog Monthly archive"
+msgstr "Archive Blogartikel"
+
+#: ./../landingpage.py:22
+msgid "Body Text"
+msgstr "Haupttext"
+
+#: ./../portlets/categories.pt:7
+#: ./../portlets/categories.py:50
+msgid "Categories"
+msgstr "Themen"
+
+#: ./../portlets/blogrecent.py:24
+msgid "Entries"
+msgstr "Beiträge"
+
+#: ./../portlets/blogrecent.py:48
+msgid "Last entries"
+msgstr "Letzte Beiträge"
+
+#: ./../blogentry.py:27
+msgid "Mark this entry as pressrelease?"
+msgstr "Diesen Artikel als Pressemitteilung markieren"
+
+#: ./../blogentry.py:23
+msgid "Please enter main body text for this blog entry"
+msgstr "Geben Sie hier den Haupttext für diesen Blogbeitrag ein"
+
+#: ./../portlets/archive.py:41
+#: ./../portlets/categories.py:27
+msgid "The name of the archive view"
+msgstr "Der Name der Blog Archivansicht"
+
+#: ./../portlets/blogrecent.py:25
+msgid "The number of entries to show"
+msgstr "Anzahl der angezeigten Blogbeiträge"
+
+#: ./../portlets/archive.py:17
+msgid "month_1"
+msgstr "Januar"
+
+#: ./../portlets/archive.py:26
+msgid "month_10"
+msgstr "Oktober"
+
+#: ./../portlets/archive.py:27
+msgid "month_11"
+msgstr "November"
+
+#: ./../portlets/archive.py:28
+msgid "month_12"
+msgstr "Dezember"
+
+#: ./../portlets/archive.py:18
+msgid "month_2"
+msgstr "Februar"
+
+#: ./../portlets/archive.py:19
+msgid "month_3"
+msgstr "März"
+
+#: ./../portlets/archive.py:20
+msgid "month_4"
+msgstr "April"
+
+#: ./../portlets/archive.py:21
+msgid "month_5"
+msgstr "Mai"
+
+#: ./../portlets/archive.py:22
+msgid "month_6"
+msgstr "Juni"
+
+#: ./../portlets/archive.py:23
+msgid "month_7"
+msgstr "Juli"
+
+#: ./../portlets/archive.py:24
+msgid "month_8"
+msgstr "August"
+
+#: ./../portlets/archive.py:25
+msgid "month_9"
+msgstr "September"
+

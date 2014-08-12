@@ -713,10 +713,10 @@ a.bg-danger:hover
 }
 .page-header
 {
-    margin: 40px 0 20px;
+    margin: 50px 0 20px;
     padding-bottom: 9px;
 
-    border-bottom: 1px solid #eee;
+   /* border-bottom: 1px solid #eee; */
 }
 ul,
 ol
@@ -11497,8 +11497,8 @@ dd.image-caption
 }
 .app-footer-content p
 {
+    text-align: center;
 	color: #a7a7a7;
-	padding-left: 33%;
     padding-top: 20px;
 
 }
@@ -11514,7 +11514,6 @@ dd.image-caption
 
 .app-footer-content ul {
 	padding-top:40px;
-	
 }
 
 .app-footer-content ul li {
@@ -11663,6 +11662,8 @@ textarea#userid
 }
 
 .app-page .documentFirstHeading {
+    margin-top: 45px;
+    margin-bottom: 20px;
 	color: #550b01;
 
 }
@@ -11847,6 +11848,13 @@ textarea#userid
 }
 /*# sourceMappingURL=roconsulting.css.map */
 
+@media only screen and (min-width: 767px) {
+    .app-kontakt ul {
+        padding-top: 20px;
+        margin-left: 90px;
+    }
+}
+
 .app-kontakt
 {
 	font-size: 1.2em;
@@ -11859,8 +11867,6 @@ textarea#userid
 	color: #fff;
 }
 
-
-
 .app-kontakt img {
     float:left;
     padding-right:10px;
@@ -11870,7 +11876,7 @@ textarea#userid
 
 .app-kontakt ul {
 	padding-top: 20px;
-    margin-left: 40px;
+    position: center;
 }
 .app-kontakt ul li {
 	display: inline-block;
@@ -11911,7 +11917,7 @@ textarea#userid
 .section-front-page #sidebar-right #splashbox-blog-recent.well {
     background-color: #f9a032;
     border:none;
-    margin-top: -180px;
+    margin-top: -228px;
     box-shadow: none;
     font-size:1.2em;
 
@@ -11935,6 +11941,7 @@ textarea#userid
 .section-front-page #splashbox-blog-recent p.muted a {
     display: block;
     font-size: 1.2em;
+    border-bottom: 1px solid #fff;
 
 }
 
@@ -11943,33 +11950,33 @@ textarea#userid
     line-height: 1em;
 }
 .section-front-page #splashbox-blog-recent p.muted span {
-    display: block;
+    display: inline-block;
     color: #fff;
 }
 .section-front-page #splashbox-blog-recent h4{
     visibility: hidden;
 }
-.section-front-page #sidebar-left {
 
+
+#sidebar-left dl.portlet.portletNews dt.portletHeader {
+     visibility: hidden;   
 }
 
-.section-front-page section.portlet.portletNews header.portletHeader{
-    visibility: hidden;
-}
-
-.section-front-page section.portlet.portletNews ul.portletContent {
+#sidebar-left  dl.portlet.portletNews dd.portletItem {
     background: url("../img/notification.png") no-repeat scroll 2% 50% transparent;
     color: #fff;
     font-size: 1.5em;
     list-style: none outside none;
     padding-left: 150px;
-    padding-top: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #ea5b0c;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;  
+    margin-bottom: -50px;
 }
 
-.section-front-page section.portlet.portletNews ul.portletContent a{
+#sidebar-left  dl.portlet.portletNews dd.portletItem  a{
     text-decoration: none;
     font-size: 1.2em;
     color: #fff;
@@ -12026,37 +12033,43 @@ textarea#userid
 
 }
 
-@media only screen and (min-width: 1280px) {
-    .section-front-page #teaser {
-    font-size: 1.5em;
-    color: #fff;
-    margin-top: -480px;
-    line-height: 1.8em;
-    float: right;
+
+.section-front-page #teasertext {
+    display: inline-block;
 }
-
-.section-front-page #teaser-header h1{
-    font-size: 4em;
-    color: #fff;
-    margin-top: -480px;
-}  
-}
-
-
 .section-front-page #teaser {
     font-size: 1.5em;
     color: #fff;
     margin-top: -480px;
     line-height: 1.8em;
-    width: 100%;
+    width: auto;
+    float:left;
 }
 
 .section-front-page #teaser-header h1{
-    font-size: 4em;
     color: #fff;
     margin-top: -480px;
     width: 100%;
 }
+
+@media only screen and (max-width: 767px) {
+    .section-front-page #teaser {
+        font-size: 1.2em;
+    }    
+}
+@media only screen and (max-width: 1280px) {
+    .section-front-page #teaser-header h1 {
+        margin-top: -420px
+    }
+    .app-header.app-header-frontpage {
+        height: auto;
+    }
+    .section-front-page #teaser {
+        clear: both;
+        margin-top: -320px;
+    }
+}
+
 @media only screen and (min-width: 767px) {
 
     .app-page .documentFirstHeading {
@@ -12078,16 +12091,20 @@ textarea#userid
 }
 
 .app-page .tileHeadline a {
+    font-size: 1em;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
+    background:url(../img/maskot_r.png) 50% 15% no-repeat transparent;
     border-radius: 10px;
     color: #550b01;
     border: 2px solid #550b01;
     display: inline-block;
     float:left;
     width: 100%;
-    height: 250px;
-    padding: 10px;
+    height: 200px;
+    padding-top: 95px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 10px;
     text-decoration: none;
     -webkit-hyphens: auto;
@@ -12097,9 +12114,10 @@ textarea#userid
 }
 
 .app-page .tileHeadline a:hover {
+    background:url(../img/maskot_w.png) 50% 15% no-repeat transparent;
     color: #fff;
     background-color: #550b01;
-    border: 2px solid #550b01;
+    border: 4px solid #550b01;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -12107,7 +12125,7 @@ textarea#userid
 }
 .app-page .tileItem {
     width: 100%;
-    height: 250px;
+    height: 200px;
     text-align: center;
     float: left;
     margin-left: 5px;
@@ -12116,16 +12134,20 @@ textarea#userid
 
 @media only screen and (min-width: 767px) {
 .app-page .tileHeadline a {
+    font-size: 1em;
+    background:url(../img/maskot_r.png) 50% 15% no-repeat transparent;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     color: #550b01;
-    border: 2px solid #550b01;
+    border: 4px solid #550b01;
     display: inline-block;
     float:left;
     width: 100%;
-    height: 250px;
-    padding: 10px;
+    height: 200px;
+    padding-top: 95px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 10px;
     text-decoration: none;
     -webkit-hyphens: auto;
@@ -12135,6 +12157,7 @@ textarea#userid
 }
 
 .app-page .tileHeadline a:hover {
+    background:url(../img/maskot_w.png) 50% 15% no-repeat transparent;
     color: #fff;
     background-color: #550b01;
     border: 2px solid #550b01;
@@ -12145,12 +12168,13 @@ textarea#userid
 }
 .app-page .tileItem {
     width: 48%;
-    height: 250px;
+    height: 200px;
     text-align: center;
     float: left;
     margin-left: 5px;
     margin-bottom: 5px;
 }    
+
 } 
 .app-header-frontpage .app-content.app-content-tiles {
     border-top: 0;
@@ -12162,18 +12186,62 @@ textarea#userid
     font-size: 1.5em;
 }
 
+.section-front-page .appbox p {
+    margin-top: 30px
+}
 .section-front-page .appbox-header {
     margin-bottom: 40px;
 
 }
 
-.section-aktuelles .page-header a{
+@media only screen and (min-width: 767px) {
+    .section-aktuelles .page-header a {
     font-size: 2em;
     color: #550b01;
+    }
+
+    .section-aktuelles .page-header h1 {
+        font-size: 2em;
+        margin-top: -10px;
+        margin-bottom: 50px;
+    }
+    .section-aktuelles .page-header span {
+        font-size: 2em;
+        color: #550b01;
+    }
+    .section-aktuelles .lead {
+        font-size:1.5em;
+        color: #550b01;
+    }
+
+    .section-aktuelles .blog-bodytext {
+        font-size:1.2em;
+    }
+
+    .section-aktuelles article.blog-entry section p {
+        font-size:1.5em;
+    }
+    .app-page .blog-list .page-header {
+    margin-top: -30px;
 }
 
+}
+
+.blog-list-entry {
+    margin-top: 60px;
+}
+.section-aktuelles .page-header a {
+    color: #550b01;
+    text-decoration: none;
+}
+
+.section-aktuelles a {
+    color: #550b01;
+}
+.section-aktuelles .page-header h1 {
+        margin-bottom: 50px;
+}
 .section-aktuelles .page-header span {
-    font-size: 2em;
     color: #550b01;
 }
 .section-aktuelles .lead {
@@ -12297,7 +12365,7 @@ span.dot {
     font-size: 1.2em;
 }
 
-.app-page .blog-list .page-header {
-    margin-top: -30px;
-}
+
+
+
 
