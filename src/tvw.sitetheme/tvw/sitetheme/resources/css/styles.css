@@ -11608,8 +11608,8 @@ textarea#userid
     font-weight: 700;
 	padding-top: 60px;
 	margin-top: 20px;
-	margin-left: 50px;
     text-transform: uppercase;
+    width: 100%;
 }
 .app-navbar .navbar-nav > .nav-item-home > a
 {
@@ -11923,6 +11923,7 @@ textarea#userid
 
 }
 
+
 .section-front-page #splashbox-blog-recent .portletHeader{
     visibility: hidden;
 }
@@ -11940,9 +11941,8 @@ textarea#userid
 }
 .section-front-page #splashbox-blog-recent p.muted a {
     display: block;
-    font-size: 1.2em;
+    font-size: 0.9em;
     border-bottom: 1px solid #fff;
-
 }
 
 .section-front-page #splashbox-blog-recent p.muted  {
@@ -11952,6 +11952,7 @@ textarea#userid
 .section-front-page #splashbox-blog-recent p.muted span {
     display: inline-block;
     color: #fff;
+    font-size: 1em;
 }
 .section-front-page #splashbox-blog-recent h4{
     visibility: hidden;
@@ -11999,7 +12000,7 @@ textarea#userid
     margin-top: 50px;
     background-color: transparent;
     display: inline-block;
-    float: left;
+
 }
 .app-header-frontpage .app-page .documentFirstHeading {
     display: hidden;
@@ -12033,48 +12034,44 @@ textarea#userid
 
 }
 
-
 .section-front-page #teasertext {
-    display: inline-block;
-}
+    display: block;
+} 
+
 .section-front-page #teaser {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fff;
-    margin-top: -480px;
-    line-height: 1.8em;
-    width: auto;
-    float:left;
+
 }
 
 .section-front-page #teaser-header h1{
     color: #fff;
-    margin-top: -480px;
-    width: 100%;
+    margin-top: 100px;
+
 }
 
-@media only screen and (max-width: 767px) {
-    .section-front-page #teaser {
-        font-size: 1.2em;
-    }    
+.section-front-page .documentFirstHeading {
+    visibility: hidden;
 }
-@media only screen and (max-width: 1280px) {
-    .section-front-page #teaser-header h1 {
-        margin-top: -420px
-    }
-    .app-header.app-header-frontpage {
-        height: auto;
-    }
-    .section-front-page #teaser {
-        clear: both;
-        margin-top: -320px;
-    }
+
+@media only screen and (min-width: 981px) {
+
 }
 
 @media only screen and (min-width: 767px) {
+.section-front-page #teaser {
+    font-size: 1.5em;
+    color: #fff;
 
+}
+    .section-front-page #teaser {
+        margin-top: 85px;
+    }
+    .section-front-page #teader-header h1 {
+        font-size: 2em;
+    }
     .app-page .documentFirstHeading {
         font-size: 3.5em;
-        width: 150%;
         margin-top: 40px;
         margin-bottom: 40px;
 
@@ -12091,7 +12088,7 @@ textarea#userid
 }
 
 .app-page .tileHeadline a {
-    font-size: 1em;
+    font-size: 0.6em;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     background:url(../img/maskot_r.png) 50% 15% no-repeat transparent;
@@ -12101,8 +12098,8 @@ textarea#userid
     display: inline-block;
     float:left;
     width: 100%;
-    height: 200px;
-    padding-top: 95px;
+    height: 130px;
+    padding-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 10px;
@@ -12125,7 +12122,7 @@ textarea#userid
 }
 .app-page .tileItem {
     width: 100%;
-    height: 200px;
+    height: 130px;
     text-align: center;
     float: left;
     margin-left: 5px;
@@ -12134,7 +12131,7 @@ textarea#userid
 
 @media only screen and (min-width: 767px) {
 .app-page .tileHeadline a {
-    font-size: 1em;
+    font-size: 0.6em;
     background:url(../img/maskot_r.png) 50% 15% no-repeat transparent;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -12144,8 +12141,8 @@ textarea#userid
     display: inline-block;
     float:left;
     width: 100%;
-    height: 200px;
-    padding-top: 95px;
+    height: 130px;
+    padding-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 10px;
@@ -12167,8 +12164,8 @@ textarea#userid
     hyphens: auto;
 }
 .app-page .tileItem {
-    width: 48%;
-    height: 200px;
+    width: 32%;
+    height: 130px;
     text-align: center;
     float: left;
     margin-left: 5px;
@@ -12187,7 +12184,8 @@ textarea#userid
 }
 
 .section-front-page .appbox p {
-    margin-top: 30px
+    margin-top: 30px;
+    font-size: 1em;
 }
 .section-front-page .appbox-header {
     margin-bottom: 40px;
@@ -12346,12 +12344,12 @@ span.dot {
 }
 
 #sidebar-right #splashbox-blog-recent.well ul.nav.nav-list li p.muted a.link-more {
-    font-size: 1em;
+    font-size: 0.9em;
     padding-bottom: 19px;
 }
 
 #sidebar-right #splashbox-blog-recent.well ul.nav.nav-list li p.muted a.link-more:hover {
-    font-size: 1em;
+    font-size: 0.9em;
     background: url(../img/navigation.png) 0px 30px no-repeat transparent;
     padding-bottom: 19px;
 }
@@ -12365,7 +12363,30 @@ span.dot {
     font-size: 1.2em;
 }
 
+.section-aktuelles .app-content {
+    margin-top: 0;
+}
 
+.section-sportangebote .app-content {
+    margin-top: 0;
+}
 
+.section-aktuelles .app-footer .app-footer-content ul li a {
+    color: #000;
+}
 
+.section-aktuelles .app-kontakt a {
+    color: #fff;
+}
+@media only screen and (min-width: 980px) and (max-width: 980px){
+.app-header.app-header-frontpage {
+    background: url("../img/figuren.png") no-repeat scroll 50% 80.7% #550b01;
+    border-bottom: 0 solid #f9a032;
+    height: 756px;
+}
+
+.section-front-page #teaser {
+    margin-top: 10px;
+}
+}
 
