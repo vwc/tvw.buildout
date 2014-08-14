@@ -406,6 +406,8 @@ img.image-right a > img,
     max-width: 100%;
     height: auto;
 }
+
+
 .img-rounded
 {
     border-radius: 0;
@@ -7362,13 +7364,14 @@ ul.formTabs:after,
 {
     clear: both;
 }
-.center-block
+.center-block 
 {
     display: block;
-
     margin-right: auto;
     margin-left: auto;
 }
+
+
 .pull-right
 {
     float: right !important;
@@ -11945,6 +11948,15 @@ textarea#userid
     border-bottom: 1px solid #fff;
 }
 
+.section-front-page #splashbox-blog-recent p.muted a:hover span {
+    color: #550b01;
+}
+
+.section-front-page #sidebar-right #splashbox-blog-recent.well .nav.nav-list ul a.link-more:hover {
+    background: none;
+    color: #550b01;
+}
+
 .section-front-page #splashbox-blog-recent p.muted  {
     display: block;
     line-height: 1em;
@@ -11963,11 +11975,13 @@ textarea#userid
      visibility: hidden;   
 }
 
+
 #sidebar-left  dl.portlet.portletNews dd.portletItem {
     background: url("../img/notification.png") no-repeat scroll 2% 50% transparent;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     list-style: none outside none;
+    padding-right: 10px;
     padding-left: 150px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -11976,6 +11990,10 @@ textarea#userid
     text-decoration: none;  
     margin-bottom: -50px;
 }
+ #sidebar-left  dl.portlet.portletNews dd.portletFooter a {
+    visibility: hidden;
+ }
+
 
 #sidebar-left  dl.portlet.portletNews dd.portletItem  a{
     text-decoration: none;
@@ -12071,7 +12089,6 @@ textarea#userid
         font-size: 2em;
     }
     .app-page .documentFirstHeading {
-        font-size: 3.5em;
         margin-top: 40px;
         margin-bottom: 40px;
 
@@ -12199,12 +12216,13 @@ textarea#userid
     }
 
     .section-aktuelles .page-header h1 {
-        font-size: 2em;
-        margin-top: -10px;
+        font-size: 1.5em;
+        margin-top: -50px;
         margin-bottom: 50px;
     }
     .section-aktuelles .page-header span {
-        font-size: 2em;
+        margin-top: 20px;
+        font-size: 1.5em;
         color: #550b01;
     }
     .section-aktuelles .lead {
@@ -12237,22 +12255,22 @@ textarea#userid
     color: #550b01;
 }
 .section-aktuelles .page-header h1 {
-        margin-bottom: 50px;
+        margin-bottom: 14px;
 }
 .section-aktuelles .page-header span {
     color: #550b01;
 }
 .section-aktuelles .lead {
-    font-size:1.5em;
+    font-size:1.3em;
     color: #550b01;
 }
 
 .section-aktuelles .blog-bodytext {
-    font-size:1.2em;
+    font-size:1em;
 }
 
 .section-aktuelles article.blog-entry section p {
-    font-size:1.5em;
+    font-size:1.2em;
 }
 
 span.dot {
@@ -12292,10 +12310,12 @@ span.dot {
 #app-navbar-nav.nav.navbar-nav li a  {
     padding-bottom: 19px;
 }
-.nav a:hover {
+
+
+.app-navbar .nav a:hover {
     background: url(../img/navigation.png) 13px 40px no-repeat transparent;
     padding-bottom: 19px;
-}
+} 
 
 .section-sportangebote .nav #sport  {
     background: url(../img/navigation.png) 13px 40px no-repeat transparent;
@@ -12350,8 +12370,8 @@ span.dot {
 
 #sidebar-right #splashbox-blog-recent.well ul.nav.nav-list li p.muted a.link-more:hover {
     font-size: 0.9em;
-    background: url(../img/navigation.png) 0px 30px no-repeat transparent;
     padding-bottom: 19px;
+    color: #550b01;
 }
 
 #gallery-thumbs .gallery {
@@ -12388,5 +12408,49 @@ span.dot {
 .section-front-page #teaser {
     margin-top: 10px;
 }
+}
+
+.section-aktuelles .app-content.app-content-tiles h1 {
+    color: #550b01;
+    margin-top: -55px;
+}
+
+.section-aktuelles .app-content.app-content-tiles h2 {
+    font-size: 1.3em;
+}
+
+.section-aktuelles .app-content-body {
+    margin-top: 20px;
+}
+
+.section-aktuelles #sidebar-right {
+    margin-top: 60px;
+}
+
+.section-aktuelles #sidebar-right a:hover {
+    color: #f9a032;
+    text-decoration: none;
+}
+
+.section-sportangebote .app-content-body {
+    margin-top: -85px;
+}
+
+.section-sportangebote .app-content.app-content-tiles #sidebar-right {
+    margin-top: 60px;
+}
+.section-sportangebote .app-content.app-content-tiles #sidebar-right a:hover p{
+    color: #f9a032;
+    text-decoration: none;
+}
+.section-front-page .app-content .appbox a:hover  h2 {
+    color: #550b01;
+}
+.section-front-page .app-content .appbox a:hover  p {
+    color: #550b01;
+}
+
+.section-sportangebote .documentFirstHeading {
+    margin-top: 30px;
 }
 
