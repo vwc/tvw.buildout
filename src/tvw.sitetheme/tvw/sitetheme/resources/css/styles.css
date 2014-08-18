@@ -11662,6 +11662,7 @@ textarea#userid
     min-height: 450px;
     padding-bottom: 20px;
     background: transparent;
+
 }
 
 .app-page .documentFirstHeading {
@@ -11685,7 +11686,6 @@ textarea#userid
 
 .app-page h3 {
 	color: #550b01;	
-    font-size: 3em;
 }
 .app-page.app-page-opaque
 {
@@ -12423,6 +12423,9 @@ span.dot {
     margin-top: 20px;
 }
 
+.section-aktuelles .app-page {
+        margin-top: 100px;
+}
 .section-aktuelles #sidebar-right {
     margin-top: 60px;
 }
@@ -12454,3 +12457,29 @@ span.dot {
     margin-top: 30px;
 }
 
+.app-page a {
+    color: #550b01;
+}
+
+.app-page a:hover {
+    color: #f9a032;
+    text-decoration: none;
+}
+
+.section-aktuelles #sidebar-right a {
+    color: #550b01;
+}
+
+.section-sportangebote #sidebar-right a {
+    color: #550b01;
+}
+
+.section-aktuelles #sidebar-right a:hover {
+    color: #f9a032;
+    text-decoration: none;
+}
+
+.section-sportangebote #sidebar-right a:hover {
+    color: #f9a032;
+    text-decoration: none;
+}
