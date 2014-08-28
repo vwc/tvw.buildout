@@ -12121,10 +12121,6 @@ textarea#userid
     padding-right: 10px;
     margin-bottom: 10px;
     text-decoration: none;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 
 .app-page .tileHeadline a:hover {
@@ -12132,10 +12128,6 @@ textarea#userid
     color: #fff;
     background-color: #550b01;
     border: 4px solid #550b01;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 .app-page .tileItem {
     width: 100%;
@@ -12164,10 +12156,6 @@ textarea#userid
     padding-right: 10px;
     margin-bottom: 10px;
     text-decoration: none;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 
 .app-page .tileHeadline a:hover {
@@ -12175,10 +12163,6 @@ textarea#userid
     color: #fff;
     background-color: #550b01;
     border: 2px solid #550b01;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 .app-page .tileItem {
     width: 32%;
@@ -12482,4 +12466,8 @@ span.dot {
 .section-sportangebote #sidebar-right a:hover {
     color: #f9a032;
     text-decoration: none;
+}
+
+#parent-fieldname-text ul {
+    font-size: 1.3em;
 }
