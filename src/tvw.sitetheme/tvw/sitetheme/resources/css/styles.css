@@ -511,8 +511,8 @@ h2,
 h3,
 .h3
 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 h1 small,
 .h1 small,
@@ -593,7 +593,7 @@ p
     font-size: 16px;
     font-weight: 200;
     line-height: 1.4;
-
+    margin-top: 25px;
     margin-bottom: 20px;
 }
 @media (min-width: 768px)
@@ -716,7 +716,7 @@ a.bg-danger:hover
 .page-header
 {
     margin: 50px 0 20px;
-    padding-bottom: 9px;
+    padding-bottom: 0px;
 
    /* border-bottom: 1px solid #eee; */
 }
@@ -4913,7 +4913,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     border-radius: 0;
     background-color: transparent;
     background-image: none;
-	color: #550b01;
+	  color: #550b01;
 }
 .navbar-toggle:focus
 {
@@ -7364,7 +7364,7 @@ ul.formTabs:after,
 {
     clear: both;
 }
-.center-block 
+.center-block
 {
     display: block;
     margin-right: auto;
@@ -11643,7 +11643,7 @@ textarea#userid
 
 .section-front-page .app-content {
     margin-bottom: 40px;
-	background-color: #f9a032;	
+	background-color: #f9a032;
 
 }
 .app-content
@@ -11674,6 +11674,7 @@ textarea#userid
 
 .app-page .documentDescription {
     margin-top: 40px;
+    margin-bottom: 40px;
 	font-size: 1.6em;
 	color: #550b01;
     float:left;
@@ -11685,7 +11686,7 @@ textarea#userid
 }
 
 .app-page h3 {
-	color: #550b01;	
+	color: #550b01;
 }
 .app-page.app-page-opaque
 {
@@ -11909,13 +11910,13 @@ textarea#userid
 #sidebar-right #infobox-blog-categories.panel.panel-default.blog-panel-categories .panel-heading {
     background-color: #fff;
     color: #550b01;
-    font-size: 1.5em;   
+    font-size: 1.5em;
 }
 
 #sidebar-right #splashbox-blog-recent.well {
     background-color: #fff;
     color: #550b01;
-    font-size: 1.5em;  
+    font-size: 1.5em;
 }
 .section-front-page #sidebar-right #splashbox-blog-recent.well {
     background-color: #f9a032;
@@ -11972,7 +11973,7 @@ textarea#userid
 
 
 #sidebar-left dl.portlet.portletNews dt.portletHeader {
-     visibility: hidden;   
+     visibility: hidden;
 }
 
 
@@ -11987,7 +11988,7 @@ textarea#userid
     padding-bottom: 40px;
     background-color: #ea5b0c;
     color: #fff;
-    text-decoration: none;  
+    text-decoration: none;
     margin-bottom: -50px;
 }
  #sidebar-left  dl.portlet.portletNews dd.portletFooter a {
@@ -12054,7 +12055,7 @@ textarea#userid
 
 .section-front-page #teasertext {
     display: block;
-} 
+}
 
 .section-front-page #teaser {
     font-size: 1.2em;
@@ -12171,9 +12172,9 @@ textarea#userid
     float: left;
     margin-left: 5px;
     margin-bottom: 5px;
-}    
+}
 
-} 
+}
 .app-header-frontpage .app-content.app-content-tiles {
     border-top: 0;
 }
@@ -12222,8 +12223,11 @@ textarea#userid
         font-size:1.5em;
     }
     .app-page .blog-list .page-header {
-    margin-top: -30px;
-}
+    margin-top: -50px;
+    }
+    .blog-entry {
+        margin-top: 40px;
+    }
 
 }
 
@@ -12262,8 +12266,8 @@ span.dot {
 }
 
 #content-core h2.headline a.summary.url {
-    color: #550b01;  
-    width: 100%;  
+    color: #550b01;
+    width: 100%;
 }
 #content-core .item .description {
     font-size: 1.5em;
@@ -12299,7 +12303,7 @@ span.dot {
 .app-navbar .nav a:hover {
     background: url(../img/navigation.png) 13px 40px no-repeat transparent;
     padding-bottom: 19px;
-} 
+}
 
 .section-sportangebote .nav #sport  {
     background: url(../img/navigation.png) 13px 40px no-repeat transparent;
@@ -12325,7 +12329,7 @@ span.dot {
 }
 
 #app-navbar.navbar.navbar-inverse.app-navbar .navbar-toggle {
-    background-color: #550b01; 
+    background-color: #550b01;
 }
 
 .section-silvesterlauf .nav #lauf  {
@@ -12339,7 +12343,7 @@ span.dot {
 
 #sidebar-right .portletHeader {
     font-size: 1.5em;
-    font-family: 'Montserrat', 'Sanchez', 'Helvetica Neue', Helvetica, Arial, sans-serif;    
+    font-family: 'Montserrat', 'Sanchez', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #sidebar-right .portlet a {
     color: #550b01;
@@ -12408,7 +12412,7 @@ span.dot {
 }
 
 .section-aktuelles .app-page {
-        margin-top: 100px;
+        margin-top: 120px;
 }
 .section-aktuelles #sidebar-right {
     margin-top: 60px;
@@ -12442,11 +12446,11 @@ span.dot {
 }
 
 .app-page a {
-    color: #550b01;
+    color: #f9a032;
 }
 
 .app-page a:hover {
-    color: #f9a032;
+    color: #550b01;
     text-decoration: none;
 }
 
@@ -12470,4 +12474,33 @@ span.dot {
 
 #parent-fieldname-text ul {
     font-size: 1.3em;
+}
+
+
+@media only screen and (min-width: 381px) {
+  #facebook {
+      background:url(../img/facebook.png) 100% 100% no-repeat transparent;
+      height: 4em;
+      width: 4em;
+      position:relative;
+      top: 4em;
+      right: 3em;
+      float:right;
+      background-size: 70%;
+      margin-bottom: -4em;
+      z-index: 5;
+  }
+}
+
+#facebook {
+    background:url(../img/facebook.png) 100% 100% no-repeat transparent;
+    height: 4em;
+    width: 4em;
+    position:relative;
+    top: 2em;
+    right: 1em;
+    float:right;
+    background-size: 70%;
+    margin-bottom: -4em;
+    z-index: 5;
 }
