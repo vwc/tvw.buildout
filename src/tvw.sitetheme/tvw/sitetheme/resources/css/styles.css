@@ -12476,7 +12476,26 @@ span.dot {
     font-size: 1.3em;
 }
 
+.section-impressum #content-core {
+  margin-top: 12em;
+  width: 100%;
+}
 
+.section-verein #content-core {
+  width: 100%;
+}
+
+@media only screen and (min-width: 981px) {
+  .section-impressum #content-core {
+    width: 70%;
+  }
+  .section-verein #content-core {
+    width: 70%;
+  }
+  .section-verein .documentDescription {
+    width: 70%;
+  }
+}
 @media only screen and (min-width: 381px) {
   #facebook {
       background:url(../img/facebook.png) 100% 100% no-repeat transparent;
